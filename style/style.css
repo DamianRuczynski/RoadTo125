@@ -1,0 +1,143 @@
+/*font-family: 'Saira', sans-serif;
+font-family: 'Saira Condensed', sans-serif;
+font-family: 'Saira Semi Condensed', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+/*HEADER*/
+
+header {
+    height: 100vh;
+    background-image: url("../images/nav.jpg");
+    background-attachment: fixed;
+    background-position: center right;
+    background-size: cover;
+}
+
+
+/*SECTION OFERTA*/
+
+section h1 {
+    background-color: transparent;
+    color: black;
+}
+
+section .offer {
+    max-width: 1280px;
+    height: 30vh;
+    margin-bottom: 10px;
+    background-position: center right;
+    background-size: cover;
+}
+
+section .offer:nth-of-type(1) {
+    background-image: url("../images/offer.jpg");
+}
+
+section .offer:nth-of-type(2) {
+    background-image: url("../images/offer2.jpg");
+}
+
+section .offer:nth-of-type(3) {
+    background-image: url("../images/offer3.jpg");
+    background-position: center bottom;
+}
+
+section .offer:nth-of-type(4) {
+    background-image: url("../images/offer4.jpg");
+}
+
+section p {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    line-height: 30vh;
+    font-family: 'Saira', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+}
+
+@media(min-width: 360px) {
+    header {
+        background-position: top 150px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+}
+
+
+@media(min-width: 820px) {
+    header {
+        background-position: top 150px;
+    }
+
+    header h1 {
+        font-size: 50px;
+        padding: 30px;
+    }
+
+    section .offer {
+        margin-bottom: 5%;
+    }
+
+    p {
+        font-size: 36px;
+    }
+}
+
+@media (orientation: landscape) {
+    section .offer {
+        background-size: cover;
+        width: 90%;
+        margin: 0 auto 10%;
+    }
+
+    section p {
+        font-size: 26px;
+    }
+}
+
+
+@media (min-width: 520px) and (orientation: landscape) {
+    section .offer {
+        background-position: center;
+        height: 80vh;
+    }
+
+    section p {
+        line-height: 80vh;
+    }
+}
+
+@media(min-width: 1024px) {
+    h1 {
+        font-size: 50px;
+        ;
+    }
+
+    section .offer {
+        margin: 0 auto 5%;
+    }
+
+    section p {
+        font-size: 36px;
+    }
+
+}
