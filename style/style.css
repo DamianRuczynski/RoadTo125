@@ -8,7 +8,6 @@ font-family: 'Saira Semi Condensed', sans-serif;*/
     box-sizing: border-box;
 }
 
-
 h1 {
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -18,6 +17,7 @@ h1 {
     font-family: 'Saira Semi Condensed', sans-serif;
     text-transform: uppercase;
 }
+
 
 /*HEADER*/
 
@@ -76,27 +76,22 @@ section p {
     header {
         background-position: top 150px;
     }
-
     p {
         font-size: 22px;
     }
 }
 
-
 @media(min-width: 820px) {
     header {
         background-position: top 150px;
     }
-
     header h1 {
         font-size: 50px;
         padding: 30px;
     }
-
     section .offer {
         margin-bottom: 5%;
     }
-
     p {
         font-size: 36px;
     }
@@ -108,19 +103,16 @@ section p {
         width: 90%;
         margin: 0 auto 10%;
     }
-
     section p {
         font-size: 26px;
     }
 }
-
 
 @media (min-width: 520px) and (orientation: landscape) {
     section .offer {
         background-position: center;
         height: 80vh;
     }
-
     section p {
         line-height: 80vh;
     }
@@ -131,13 +123,29 @@ section p {
         font-size: 50px;
         ;
     }
-
     section .offer {
-        margin: 0 auto 5%;
+        margin: 0 2.5% 5%;
+        float: left;
+        width: 40%;
+        height: 30vh;
     }
-
     section p {
-        font-size: 36px;
+        font-size: 22px;
+        line-height: 30vh;
+        opacity: 0;
+        transition: .7s;
     }
+    section p:hover {
+        opacity: 1;
+    }
+}
 
+@media(min-width: 1024px) {
+    section .offer {
+        width: 45%;
+        height: 45vh;
+    }
+    section p {
+        line-height: 45vh;
+    }
 }
