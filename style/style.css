@@ -1,151 +1,346 @@
-/*font-family: 'Saira', sans-serif;
+    /*font-family: 'Saira', sans-serif;
 font-family: 'Saira Condensed', sans-serif;
 font-family: 'Saira Semi Condensed', sans-serif;*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-h1 {
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.4);
-    text-align: center;
-    color: white;
-    font-size: 35px;
-    font-family: 'Saira Semi Condensed', sans-serif;
-    text-transform: uppercase;
-}
-
-
-/*HEADER*/
-
-header {
-    height: 100vh;
-    background-image: url("../images/nav.jpg");
-    background-attachment: fixed;
-    background-position: center right;
-    background-size: cover;
-}
-
-
-/*SECTION OFERTA*/
-
-section h1 {
-    background-color: transparent;
-    color: black;
-}
-
-section .offer {
-    max-width: 1280px;
-    height: 30vh;
-    margin-bottom: 10px;
-    background-position: center right;
-    background-size: cover;
-}
-
-section .offer:nth-of-type(1) {
-    background-image: url("../images/offer.jpg");
-}
-
-section .offer:nth-of-type(2) {
-    background-image: url("../images/offer2.jpg");
-}
-
-section .offer:nth-of-type(3) {
-    background-image: url("../images/offer3.jpg");
-    background-position: center bottom;
-}
-
-section .offer:nth-of-type(4) {
-    background-image: url("../images/offer4.jpg");
-}
-
-section p {
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    line-height: 30vh;
-    font-family: 'Saira', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    cursor: default;
-}
-
-@media(min-width: 360px) {
-    header {
-        background-position: top 150px;
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-    p {
-        font-size: 22px;
+    
+    .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
     }
-}
-
-@media(min-width: 820px) {
-    header {
-        background-position: top 150px;
-    }
-    header h1 {
-        font-size: 50px;
-        padding: 30px;
-    }
-    section .offer {
-        margin-bottom: 5%;
-    }
-    p {
-        font-size: 36px;
-    }
-}
-
-@media (orientation: landscape) {
-    section .offer {
-        background-size: cover;
-        width: 90%;
-        margin: 0 auto 10%;
-    }
-    section p {
-        font-size: 26px;
-    }
-}
-
-@media (min-width: 520px) and (orientation: landscape) {
-    section .offer {
-        background-position: center;
-        height: 80vh;
-    }
-    section p {
-        line-height: 80vh;
-    }
-}
-
-@media(min-width: 1024px) {
+    
     h1 {
-        font-size: 50px;
-        ;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        color: white;
+        font-size: 35px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        text-transform: uppercase;
     }
-    section .offer {
-        margin: 0 2.5% 5%;
-        float: left;
-        width: 40%;
+    /*HEADER*/
+    
+    header {
+        height: 100vh;
+        background-image: url("../images/nav.jpg");
+        background-attachment: fixed;
+        background-position: center right;
+        background-size: cover;
+    }
+    
+    @media(min-width: 360px) {
+        header {
+            background-position: top 150px;
+        }
+    }
+    
+    @media(min-width: 768px) {
+        header {
+            background-position: top 150px;
+        }
+        h1 {
+            font-size: 50px;
+            padding: 30px;
+        }
+    }
+    /*SECTION OFERTA*/
+    
+    .ourTeam h1 {
+        background-color: transparent;
+        color: black;
+    }
+    
+    .ourTeam .offer {
+        max-width: 1280px;
+        height: 30vh;
+        margin-bottom: 10px;
+        background-position: center right;
+        background-size: cover;
+    }
+    
+    .ourTeam .offer:nth-of-type(1) {
+        background-image: url("../images/offer.jpg");
+    }
+    
+    .ourTeam .offer:nth-of-type(2) {
+        background-image: url("../images/offer2.jpg");
+    }
+    
+    .ourTeam .offer:nth-of-type(3) {
+        background-image: url("../images/offer3.jpg");
+        background-position: center bottom;
+    }
+    
+    .ourTeam .offer:nth-of-type(4) {
+        margin-bottom: 0;
+        background-image: url("../images/offer4.jpg");
+    }
+    
+    .ourTeam p {
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        line-height: 30vh;
+        font-family: 'Saira', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: default;
+    }
+    
+    @media(min-width: 360px) {
+        .ourTeam p {
+            font-size: 18px;
+        }
+    }
+    
+    @media (orientation: landscape) {
+        .ourTeam .offer {
+            background-size: cover;
+            width: 90%;
+            margin: 0 auto 10%;
+        }
+        .ourTeam p {
+            font-size: 26px;
+        }
+    }
+    
+    @media (min-width: 520px) and (orientation: landscape) {
+        .ourTeam .offer {
+            background-position: center;
+            height: 80vh;
+        }
+        .ourTeam p {
+            line-height: 80vh;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .ourTeam .offer {
+            margin-bottom: 5%;
+        }
+        .ourTeam p {
+            font-size: 28px;
+        }
+    }
+    
+    @media(min-width: 1025px) {
+        h1 {
+            font-size: 50px;
+            ;
+        }
+        .ourTeam .offer {
+            margin: 0 2.5% 5%;
+            float: left;
+            width: 40%;
+            height: 30vh;
+        }
+        .ourTeam p {
+            font-size: 22px;
+            line-height: 30vh;
+            opacity: 0;
+            transition: .7s;
+        }
+        .ourTeam p:hover {
+            opacity: 1;
+        }
+        .ourTeam .offer {
+            width: 45%;
+            height: 45vh;
+        }
+        .ourTeam p {
+            line-height: 45vh;
+        }
+    }
+    /* TRAVELS */
+    
+    .container {
+        padding: 10px;
+        background-image: url(../images/travels.jpg);
+        background-position: center;
+    }
+    
+    .travels h1 {
+        padding: 20px;
+        color: white;
+        background-color: black;
+    }
+    
+    .trip {
+        width: 90%;
+        margin: 0 auto 15px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    
+    .trip .photo {
+        height: 30vh;
+        background-image: url(../images/trip1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .trip:nth-of-type(2) .photo {
+        background-image: url(../images/trip2.jpeg);
+    }
+    
+    .trip:nth-of-type(3) .photo {
+        background-image: url(../images/trip3.jpeg);
+    }
+    
+    .trip:nth-of-type(4) .photo {
+        background-image: url(../images/trip4.jpg);
+    }
+    
+    .trip:nth-of-type(5) .photo {
+        background-image: url(../images/trip5.jpg);
+    }
+    
+    .trip .desc {
         height: 30vh;
     }
-    section p {
-        font-size: 22px;
-        line-height: 30vh;
-        opacity: 0;
-        transition: .7s;
+    
+    .trip .desc h2 {
+        padding: 10px 0;
+        color: white;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
     }
-    section p:hover {
-        opacity: 1;
+    
+    .trip .desc p {
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        font-family: 'Saira', sans-serif;
     }
-}
-
-@media(min-width: 1024px) {
-    section .offer {
-        width: 45%;
-        height: 45vh;
+    
+    @media (min-width: 360px) {
+        .trip .desc h2 {
+            padding: 15px 0;
+            font-size: 26px;
+        }
+        .trip .desc p {
+            font-size: 16px;
+        }
     }
-    section p {
-        line-height: 45vh;
+    
+    @media (min-width: 390px) {
+        .trip .photo {
+            height: 20vh;
+        }
+        .trip .desc {
+            height: 20vh;
+        }
+        .trip .desc h2 {
+            font-size: 28px;
+        }
+        .trip .desc p {
+            font-size: 18px;
+        }
     }
-}
+    
+    @media(orientation: landscape) {
+        .trip {
+            padding: 20px;
+            margin: 30px auto;
+        }
+        .trip .photo {
+            float: left;
+            width: 50%;
+            height: 35vh;
+            background-image: url(../images/trip1.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .trip:nth-of-type(even) .photo {
+            float: right;
+        }
+        .trip .desc {
+            float: right;
+            width: 50%;
+            height: 35vh;
+        }
+        .trip .desc h2 {
+            padding: 8px 0;
+            font-size: 18px;
+        }
+        .trip .desc p {
+            font-size: 12px;
+        }
+    }
+    
+    @media(min-width: 640px) and (orientation: landscape) {
+        .trip .desc h2 {
+            padding: 10px 0;
+            font-size: 22px;
+        }
+        .trip .desc p {
+            font-size: 14px;
+        }
+    }
+    
+    @media(min-width: 720px) and (orientation: landscape) {
+        .trip .photo {
+            height: 50vh;
+        }
+        .trip .desc {
+            height: 50vh;
+        }
+        .trip .desc h2 {
+            padding: 16px 0;
+            font-size: 28px;
+        }
+        .trip .desc p {
+            font-size: 22px;
+        }
+    }
+    
+    @media (min-width: 768px) or (orientation: portrait) {
+        .trip {
+            padding: 20px;
+            margin: 30px auto;
+        }
+        .trip .photo {
+            float: left;
+            width: 50%;
+            height: 20vh;
+            background-image: url(../images/trip1.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .trip:nth-of-type(even) .photo {
+            float: right;
+        }
+        .trip .desc {
+            float: right;
+            padding: 10px;
+            width: 50%;
+            height: 20vh;
+        }
+        .trip .desc h2 {
+            padding: 16px 0;
+            font-size: 26px;
+        }
+        .trip .desc p {
+            font-size: 16px;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .trip .desc h2 {
+            padding: 16px 0;
+            font-size: 36px;
+        }
+        .trip .desc p {
+            font-size: 22px;
+        }
+    }
+    /* FOOTER */
+    
+    footer {
+        height: 30vh;
+    }
